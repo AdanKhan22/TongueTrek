@@ -7,7 +7,7 @@ export default function NavBar(props) {
       <div>
         <nav
           className="navbar navbar-expand-lg bg-body-tertiary h-20 "
-          data-bs-theme="black"
+          data-bs-theme={`${props.mode}`}
         >
           <div className="container-fluid">
             <a className="navbar-brand" href="/">

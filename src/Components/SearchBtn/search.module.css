@@ -1,5 +1,5 @@
 .input {
-    width: 100%;
+    width: 160%;
     max-width: 220px;
     height: 45px;
     padding: 12px;
@@ -8,6 +8,7 @@
     outline: none;
     transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
     box-shadow: 0px 0px 20px -18px;
+    margin: 5px;
   }
   
   .input:hover {
@@ -23,14 +24,12 @@
     border: 2px solid grey;
   }
 
-  .mybackground {
-    .box {
-      --mask:
-        radial-gradient(26.00px at 50% calc(100% - 26.00px),#000 99%,#0000 101%) calc(50% - 52px) 0/104px 100%,
-        radial-gradient(26.00px at 50% calc(100% + 0.00px),#0000 99%,#000 101%) 50% calc(100% - 26px)/104px 100% repeat-x;
-      -webkit-mask: var(--mask);
-              mask: var(--mask);
-    }
-  }
+.main{ 
+  position: absolute;
+  top: 40%; /* Position at the middle vertically */
+  right: 15%; /* Position at the right side */
+  transform: translateY(-50%); /* Center vertically */
+  background-color: brown;
+}
 
   
