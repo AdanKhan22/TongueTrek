@@ -3,6 +3,20 @@ import styles from "./search.module.css";
 import btnstyles from "./searchbtn.module.css";
 
 export default function SearchBtn() {
+  const windowHeight = window.innerHeight;
+  const scrollStep = Math.round(windowHeight / 15); // Adjust scroll step for smoothness
+  let scrollCount = 0;
+
+  const storeInput = () => {
+    scrollCount += scrollStep;
+    window.scrollTo(0, scrollCount);
+
+    if (scrollCount < document.body.scrollHeight - windowHeight) {
+      requestAnimationFrame(scrollStepHandler);
+    }
+    requestAnimationFrame(scrollStepHandler);
+  };
+
   return (
     <>
       <div className={styles.main} style={{ backgroundColor: "black" }}>
@@ -18,7 +32,10 @@ export default function SearchBtn() {
           </div>
 
           <div>
-            <button className={`${btnstyles.button} ${btnstyles.svgIcon}`}>
+            <button
+              className={`${btnstyles.button} ${btnstyles.svgIcon}`}
+              onClick={storeInput}
+            >
               <svg
                 className={btnstyles.svgIcon}
                 viewBox="0 0 512 512"

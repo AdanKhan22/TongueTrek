@@ -28,12 +28,13 @@ export default function App() {
 
   return (
     <>
-      <MyNav title="My Nav" mode={"dark"}></MyNav>
+      <MyNav title="My Nav"></MyNav>
 
       <div style={myStyles}>
         <MyMain></MyMain>
         <MySearch></MySearch>
       </div>
+
       <WorldMap color="green" size="lg" data={data} />
     </>
   );

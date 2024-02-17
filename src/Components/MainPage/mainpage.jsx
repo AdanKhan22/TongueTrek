@@ -1,19 +1,33 @@
 import React from "react";
-import myimage from "../../../public/globe.png";
+import myimage from "/globe.png";
 
 export default function mainpage() {
   const styles = {
-    display: "flex",
-    width: "50%",
+    position: "absolute",
+    inset: "154px 1px 124px -12px",
     maxWidth: "1000px",
-    height: "50%",
-    justifyContent: "center",
-    alignItems: "center",
-    marginTop: "50px",
+    height: "60%",
+    width: "60%",
   };
+
+  const bottomBar = {
+    position: "fixed",
+    display: "inline-block",
+    height: "50px",
+    width: "100%",
+    backgroundColor: "red",
+    right: "3px",
+    bottom: "0%",
+  };
+
   return (
-    <div>
-      <img src={myimage} style={styles}></img>
-    </div>
+    <>
+      <div>
+        <img src={myimage} style={styles}></img>
+      </div>
+      <div className="mybar" style={bottomBar}>
+        150
+      </div>
+    </>
   );
 }

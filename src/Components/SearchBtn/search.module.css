@@ -27,9 +27,8 @@
 .main{ 
   position: absolute;
   top: 40%; /* Position at the middle vertically */
-  right: 15%; /* Position at the right side */
+  right: 96px; /* Position at the right side */
   transform: translateY(-50%); /* Center vertically */
-  background-color: brown;
 }
 
   
