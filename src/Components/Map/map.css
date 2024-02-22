@@ -1,0 +1,13 @@
+.mymap-cointainer{
+    display: flex;
+    position: relative;
+   justify-content: center; /* horizontally center */
+   align-items: center; /* vertically center */
+   height: 68vh; /* Optional: Set height of container to full viewport height */
+   top: 1460px; /* Position at the top */
+  
+    
+
+}
+
+

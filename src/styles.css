@@ -1,11 +1,16 @@
-/* .bg-dark  {
-   
-        --mask:
-          radial-gradient(22.00px at 50% 22.00px,#000 99%,#0000 101%) calc(50% - 44px) 0/88px 100%,
-          radial-gradient(22.00px at 50% 0px,#0000 99%,#000 101%) 50% 22px/88px 100% repeat-x;
-        -webkit-mask: var(--mask);
-                mask: var(--mask);
-    
-      
-     
-      } */
+html, body {
+  height: 100%;
+}
+
+body {
+  background: rgb(0, 0, 0);
+  background: -moz-linear-gradient(18deg, rgba(0, 0, 0, 1) 0%, rgba(25, 25, 25, 1) 50%, rgba(65, 130, 143, 1) 100%);
+  background: -webkit-linear-gradient(18deg, rgba(0, 0, 0, 1) 0%, rgba(25, 25, 25, 1) 50%, rgba(65, 130, 143, 1) 100%);
+  background: linear-gradient(18deg, rgba(0, 0, 0, 1) 0%, rgba(25, 25, 25, 1) 50%, rgba(65, 130, 143, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#41828f", GradientType=1);
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: #fff; /* Adjust color to your preference */
+  line-height: 1.6;
+}

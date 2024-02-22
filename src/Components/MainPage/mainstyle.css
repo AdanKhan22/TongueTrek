@@ -1,0 +1,33 @@
+.mainglobe{
+display: flex;
+position:absolute;
+top: 90px;
+left: 620px;
+flex-direction: row; 
+align-items: center; /* Align items vertically to the center */
+justify-content: flex-end; /* Align items horizontally to the right */
+   
+}
+#globeimage{
+  height: 50%; /* Set the height of the flex item */
+  width: 85%; /* Set the width of the flex item */
+
+}
+.fontbox{
+    display: flex;
+    position: absolute; /* Position the container relative to the document */
+    top: 110px; /* Position at the top */
+    left: 30px; /* Position at the left */
+    display: flex;
+    flex-direction: column; /* Arrange items vertically */
+    align-items: flex-start; /* Align items along the cross axis (vertically) to the start */
+    justify-content: flex-start; /* Align items along the main axis (horizontally) to the start */
+    z-index: 1; /* Ensure the container is above other elements with lower z-index */
+    width: 40%;
+}
+h3 {
+    font-family: Arial, sans-serif; /* Specify font family */
+    font-size: 60px; /* Specify font size */
+    color: #ffffff; /* Specify font color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow */
+  }

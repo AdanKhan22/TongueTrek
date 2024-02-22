@@ -1,25 +1,16 @@
-import PropTypes from "prop-types";
+import React from "react";
+import "./navbar.css";
 
-export default function NavBar(props) {
+export default function NavBar() {
   return (
     <>
-      <div>
-        <nav className="navbar" style={{ backgroundColor: "#000000" }}>
-          <div className="container-fluid">
-            <a className="navbar-brand" href="#">
-              <img
-                src="https://d35aaqx5ub95lt.cloudfront.net/images/splash/f92d5f2f7d56636846861c458c0d0b6c.svg"
-                alt="Bootstrap"
-                style={{ position: "relative", top: "20px", left: "30px" }}
-              />
-            </a>
-          </div>
-        </nav>
+      <div className="navbar">
+        <a href="#" class="logo">
+          Your Logo
+        </a>
+        <a href="#">Home</a>
+        <a href="#">About</a>
       </div>
     </>
   );
 }
-
-// NavBar.propTypes = {
-//   title: PropTypes.string,
-// };
