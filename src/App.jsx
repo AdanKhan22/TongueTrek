@@ -1,18 +1,15 @@
 import React from "react";
-import MyMap from "./Components/Map/map.jsx";
+// import MyMap from "./Components/Map/map.jsx"; // Map will be implemented later
 import MyNav from "./Components/Navbar/Navbar.jsx";
-import MySearch from "./Components/SearchBtn/searchbar.jsx";
-import MyMain from "./Components/MainPage/mainpage.jsx";
-import MyList from "./Components/DisplayContents/display.jsx";
+import Hero from "./Components/Hero/mainpage.jsx";
+import Searchbar from "./Components/SearchBar/searchbar.jsx";
 
 export default function App() {
   return (
     <>
       <MyNav title="My Nav"></MyNav>
-      <MyMain></MyMain>
-      <MySearch></MySearch>
-      <MyList></MyList>
-      <MyMap></MyMap>
+      <Hero></Hero>
+      <Searchbar></Searchbar>
     </>
   );
 }

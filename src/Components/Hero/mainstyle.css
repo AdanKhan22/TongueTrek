@@ -1,0 +1,56 @@
+.herosection{
+   display: flex;
+   justify-content: space-around;
+   flex-direction: row;
+   align-items: center;
+   margin: 10px;
+   padding: 10px;
+}
+
+
+.herosection img{
+  max-width: 60%;
+  max-height: 40%;
+ 
+}
+
+.herosection h1{
+  font-size: var(--fs-600);
+  font-family: var(--ff-heading);
+  font-weight: var(--ff-bold);
+  line-height: 5rem;
+  padding: 10px;
+}
+
+
+.herosection p{
+  font-size:var(--fs-400);
+  font-family:var(--ff-body);
+  font-weight: var(--fw-regular);
+  line-height: 3rem;
+  padding: 10px;
+  color: var(--primary-dark);
+}
+
+
+
+@media screen and (max-width:720px){
+  .herosection{
+    flex-direction: column;
+    
+  }
+
+  .herosection h1{
+    font-size: var(--fs-600);
+    line-height: 3.5rem;
+  }
+
+  .herosection img {
+    max-width: 100%;
+    max-height: 100%;
+   
+  }
+}
+
+
+  

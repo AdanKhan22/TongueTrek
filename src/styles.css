@@ -1,16 +1,95 @@
-html, body {
+:root{
+--primary-dark: hsl(0, 0%, 0%);
+--primary-mid-dark: hsl(240, 3%, 47%);
+--primary-light-dark: hsl(240, 3%, 66%);
+--primary-light: hsl(0, 0%, 100%);
+--primary-background: hsl(240, 22%, 96%);
+--secondary-dark: hsl(244, 68%, 59%);
+
+
+--ff-primary:'Be Vietnam Pro', sans-serif;
+--ff-secondary:'Be Vietnam Pro', sans-serif;
+
+--ff-heading: var(--ff-primary);
+--ff-body: var(--ff-secondary);
+--ff-button: var(--ff-primary);
+
+
+--fw-regular: 300;
+--fw-semi-bold: 500;
+--fw-bold: 600;
+
+--fs-400: 1.5rem;
+--fs-500: 1rem;
+--fs-600: 3rem;
+
+}
+
+body{
+  background-color: var(--primary-background);
+}
+
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
   height: 100%;
 }
 
+
 body {
-  background: rgb(0, 0, 0);
-  background: -moz-linear-gradient(18deg, rgba(0, 0, 0, 1) 0%, rgba(25, 25, 25, 1) 50%, rgba(65, 130, 143, 1) 100%);
-  background: -webkit-linear-gradient(18deg, rgba(0, 0, 0, 1) 0%, rgba(25, 25, 25, 1) 50%, rgba(65, 130, 143, 1) 100%);
-  background: linear-gradient(18deg, rgba(0, 0, 0, 1) 0%, rgba(25, 25, 25, 1) 50%, rgba(65, 130, 143, 1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#41828f", GradientType=1);
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  color: #fff; /* Adjust color to your preference */
-  line-height: 1.6;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
 }
+
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+} 
